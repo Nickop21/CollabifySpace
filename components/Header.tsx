@@ -1,0 +1,18 @@
+import { cn } from '@/lib/utils'
+import Image from 'next/image'
+import Link from 'next/link'
+import React from 'react'
+
+const Header = ({children,className}:HeaderProps) => {
+  return (
+    <div className={cn('header shadow-md shadow-white',className)}>
+      <Link href='/' className=''>
+      <Image src="/assets/icons/logo.svg" alt='logo' width={120} height={32} className='hidden md:block'/>
+      <Image src="/assets/icons/logo.svg" alt='logo' width={120} height={32} className='md:hidden'/>
+      </Link>
+      {children}
+    </div>
+  )
+}
+
+export default Header
