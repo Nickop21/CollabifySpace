@@ -2,8 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-/* @import "@liveblocks/react-ui/styles.css"; */
-/* @import "@liveblocks/react-lexical/styles.css"; */
+@import "@liveblocks/react-ui/styles.css";
+@import "@liveblocks/react-lexical/styles.css";
 
 @import "../styles/dark-theme.css";
 
@@ -51,7 +51,7 @@
   }
 
   .shad-dialog {
-    @apply w-full max-w-[400px] rounded-xl border-none bg-doc bg-cover px-5 py-7 shadow-xl sm:min-w-[500px] !important;
+    @apply w-full max-w-[400px] rounded-xl border-none bg-cover px-5 py-7 shadow-xl sm:min-w-[500px] !important;
   }
 
   .shad-dialog button {
@@ -83,7 +83,7 @@
   }
 
   .toolbar-wrapper {
-    @apply z-50 custom-scrollbar w-screen overflow-auto border-y border-dark-300 bg-dark-100 pl-3 pr-4 shadow-sm;
+    @apply z-50 custom-scrollbar  overflow-auto border-y border-dark-300 bg-dark-100 pl-3 pr-4 shadow-sm;
   }
 
   .editor-wrapper {
@@ -103,7 +103,7 @@
   }
 
   .document-list-item {
-    @apply flex items-center justify-between gap-4 rounded-lg bg-doc bg-cover p-5 shadow-xl;
+    @apply flex items-center justify-between gap-4 rounded-xl bg-slate-800   bg-cover p-5 shadow-xl;
   }
 
   .document-list-empty {
