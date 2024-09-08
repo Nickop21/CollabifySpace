@@ -155,7 +155,7 @@
 
   /* ======================== Home Page */
   .home-container {
-    @apply relative flex min-h-screen w-full flex-col items-center gap-5 sm:gap-10;
+    @apply relative flex min-h-screen w-fit sm:w-full flex-col items-center gap-5 sm:gap-10;
   }
 
   .document-ul {
