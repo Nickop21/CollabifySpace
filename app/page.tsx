@@ -48,7 +48,7 @@ export default async function Home() {
 
             <div className="flex flex-wrap gap-10 w-full py-10">
               {roomDocument.data.map(({ id, metadata, createdAt }: any) => (
-                <div className="w-full md:w-[46%]">
+                <div className="w-full md:w-[46%]" key={id}>
                   <DocumentCard
                     id={id}
                     metadata={metadata}
