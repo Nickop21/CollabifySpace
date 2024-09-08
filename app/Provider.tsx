@@ -7,6 +7,8 @@ import {
 } from "@liveblocks/react/suspense";
 import { getClerkUsers, getDocumentUsers } from "@/lib/actions/user.actions";
 import { useUser } from "@clerk/nextjs";
+import Loader from "@/components/Loader";
+
 
 const Provider = ({ children }: { children: ReactNode }) => {
   const  {user:clerkUsers}=useUser()
@@ -26,7 +28,7 @@ const Provider = ({ children }: { children: ReactNode }) => {
           return roomUsers;
       }}
     >
-      <ClientSideSuspense fallback={<div>Loading…</div>}>
+      <ClientSideSuspense fallback={<Loader/>}>
         {children}
       </ClientSideSuspense>
     </LiveblocksProvider>

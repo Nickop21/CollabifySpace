@@ -5,10 +5,10 @@ import React from 'react'
 
 const Header = ({children,className}:HeaderProps) => {
   return (
-    <div className={cn('header shadow-md shadow-white',className)}>
+    <div className={cn('header shadow-sm shadow-white ',className)}>
       <Link href='/' className=''>
-      <Image src="/assets/icons/logo.svg" alt='logo' width={120} height={32} className='hidden md:block'/>
-      <Image src="/assets/icons/logo.svg" alt='logo' width={120} height={32} className='md:hidden'/>
+      <Image src="/assets/logo.svg" alt='logo' width={180} height={50} className='hidden sm:block'/>
+      <Image src="/assets/logo.svg" alt='logo' width={120} height={32} className='sm:hidden'/>
       </Link>
       {children}
     </div>
