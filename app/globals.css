@@ -10,7 +10,7 @@
 /* ========================================== TAILWIND STYLES */
 @layer base {
   :root {
-    background: #09111f;
+    background: #01040af5;
     color: #fff;
     margin: 0;
   }
@@ -193,6 +193,13 @@
   background-color: #3371ff;
   color: #fff;
 }
+.cl-internal-1vaiebp {
+  color: rgb(192, 190, 186) !important;
+}
+.cl-internal-7p49t,.cl-internal-1n1pp0d,.cl-internal-gki98p {
+  color: rgb(87, 86, 85) !important;
+}
+
 
 .cl-internal-2gzuzc {
   filter: brightness(1000%);
